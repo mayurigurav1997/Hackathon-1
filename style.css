@@ -3,12 +3,15 @@ body{
     margin: 0;
     /* border:2px solid black; */
     box-sizing: border-box;
-     /* height:98vh; */
     width:98vw; 
+    /* height:98vh; */
     background-image: url('Images/Beer1.jpg');
-    /* background-repeat: no-repeat; */
     background-size: cover;
     
+}
+html{
+    font-size:62.5%;
+    /* font-size is set to 10 px by default it is 16px  */
 }
 .main_container{
     /* border:2px solid orange; */
@@ -19,18 +22,18 @@ body{
 .search_box{
     /* width:400px; */
     margin:auto;
-    margin:20px 400px 10px 400px;
+    margin:2rem 40rem 1rem 40rem;
     /* border:2px solid blue; */
 }
 input{
-    height:45px;
-    width:540px;
+    height:4.4rem;
+    width:54rem;
     border-radius: 15px;
     border:none;
     outline:none;
     background-color: rgba(255,255,255,0.6);
     text-align: center;
-    font-size:25px;
+    font-size:2.8rem;
     font-weight:bold;
     color:rgb(79, 76, 76);
 }
@@ -41,8 +44,8 @@ input{
     /* border:2px solid red; */
     width:100%;
     height:86vh;
-    background-color: rgba(240,240,240,0.1);
-    opacity:0.7;
+    background-color: rgba(240,240,240,0);
+    opacity:0.8;
     border-radius: 15px;
     display:flex;
     flex-direction:row;
@@ -51,26 +54,28 @@ input{
 }
 .cards{
     /* border:2px solid black; */
-    height:300px;
-    width:270px;
+    height:30rem;
+    width:25rem;
     border-radius:15px;
-    background-color: rgba(255,255,255,0.9);
-    margin:10px;
+    background-color: rgba(255,255,255,0.8);
+    margin:2rem;
     text-align: center;
     position:relative;
     box-sizing: border-box;
 }
 .brewery_details{
     /* border:2px solid rebeccapurple; */
-    font-size:1.7rem;
+    padding: .5rem 0 0 0;
+    font-size:2.6rem;
     font-weight: bolder;
-    line-height: 2.5rem;
+    line-height:3.5rem;
     position:absolute;
-    top:0px;
-    bottom:180px;
-    left:0px;
-    right:0px;
+    top:0rem;
+    bottom:18rem;
+    left:0rem;
+    right:0rem;
     box-sizing: border-box;
+    overflow-y: hidden;
 
 }
 .brewery_details .name{
@@ -84,28 +89,28 @@ input{
 }
 .location_details{
     /* border:2px solid cyan; */
-    font-size:1.2rem;
+    font-size:1.8rem;
     font-weight: bold;
-    line-height:1.8rem;
+    line-height:3rem;
     color:black;
-    padding:10px;
     position:absolute;
-    top:115px;
-    bottom:55px;
-    left:0px;
-    right:0px;
+    top:12rem;
+    bottom:54px;
+    left:0rem;
+    right:0rem;
+    overflow-y: hidden;
 
 }
 .contact_details{
-    /* border:2px solid red;
-     */
-    line-height:1.5rem;
-    font-size:1rem;
+    /* border:2px solid red; */
+    line-height:2.5rem;
+    font-size:1.7rem;
     font-weight: bold;
     /* padding:5px; */
     position:absolute;
-    bottom:0px;
-    top:240px;
-    left:0px;
-    right:0px;
+    bottom:0rem;
+    top:24.5rem;
+    left:0rem;
+    right:0rem;
+    overflow-x: hidden;
 }

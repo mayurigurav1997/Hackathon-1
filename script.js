@@ -40,12 +40,19 @@ input_box.addEventListener("keypress", (event) => {
 
 //fetching the Data from the API endpoint
 async function getData(endpoint) {
-    // console.log("This is a " + endpoint);
-    const response = await fetch(`${BreweriesApi.baseUrl}/search?query=${endpoint}`);
-    // console.log(response);
-    const data = await response.json();
-    console.log(data);
-    showData(data);
+    //try and catch to handle error
+    try {
+        // console.log("This is a " + endpoint);
+        const response = await fetch(`${BreweriesApi.baseUrl}/search?query=${endpoint}`);
+        // console.log(response);
+        const data = await response.json();
+        console.log(data);
+        showData(data);
+    }
+    catch (err) {
+        alert("There is problem to fetching the data");
+        console.log(err);
+    }
 }
 
 //show the Data
