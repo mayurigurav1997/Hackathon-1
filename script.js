@@ -15,6 +15,7 @@ document.body.appendChild(main_container);
 const search_box = createElement("div", "class", "search_box");
 main_container.appendChild(search_box);
 
+
 //creating the input box
 const input_box = createElement("input", "class", "input_box");
 input_box.setAttribute("placeholder", "Search by Breweries Name, City, State...");
